@@ -1,0 +1,13 @@
+.custom-swiper{
+    place-items: center;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    opacity: 1;
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    overflow: hidden;
+    margin: auto;
+}
+*{
+    background-color: rgb(255, 255, 255);
+}
