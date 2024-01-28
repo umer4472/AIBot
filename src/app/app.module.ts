@@ -12,16 +12,18 @@ import {MatIconModule} from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { AboutComponent } from './about/about.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
-  declarations: [					
+  declarations: [						
     AppComponent,
       HomeComponent,
       ContactUsComponent,
       PrivacyPolicyComponent,
       AboutComponent,
-      NavbarComponent
+      NavbarComponent,
+      FooterComponent
    ],
   imports: [
     BrowserModule,

@@ -1,30 +1,7 @@
 .background{
    background-color: #181819;
 }
-.navbar{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.navbar-brand{
-    color: #fff;
-    font-size: 36px;
-    font-weight: 500px;
-}
-.navbar-collapse{
-    flex-grow: unset;
-}
-li{
-    font-size: 24px;
-    cursor: pointer;
-    margin-left: 24px;
-}
-li span{
-    color: #fff;
-}
-.active span{
-    color:  rgb(252, 104, 0);;
-}
+
 
 .imgWithText{
     display: flex;
@@ -84,7 +61,6 @@ li span{
     justify-content: center;
     align-items: center;
     font-size: 25px;
-    font-weight: bold;
 }
 
 .card-body {
@@ -129,7 +105,6 @@ li span{
 .multicoulmn-wrapper-bg .column:nth-of-type(3){
     border-right: 1px solid #fff;
 }
-
 .multicoulmn-wrapper-bg .multicolumn{
     display: flex;
     flex-wrap: wrap;
@@ -245,7 +220,6 @@ width: 100%
 @media screen and (max-width: 1242px) {
     .multicoulmn-wrapper-bg-v2  .column{
         min-height: 462px;
-
     }
 
 }
@@ -419,36 +393,6 @@ width: 100%
     color: rgb(252, 104, 0);
     animation: 5s ease-in-out;
   }
-  footer{
-    background-color: #181819;
-  }
-  .footer-list{
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-  
-  }
-
-  .footer-list h2{
-    cursor: pointer;
-  }
-.footer-text{
-    display: flex;
-    justify-content: space-between;
-}
-.right-footer{
-    display: flex;
-    gap: 20px;
-}
-.list-unstyled{
-    display: flex;
-    gap: 20px;
-}
-mat-icon{
-    border-color: rgb(252, 104, 0);
-    font-size: 25px;
-    cursor: pointer;
-}
 
 
 
