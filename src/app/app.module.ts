@@ -8,20 +8,28 @@ import { ContactUsComponent } from './contactUs/contactUs.component';
 import { PrivacyPolicyComponent } from './privacyPolicy/privacyPolicy.component';
 import { UsecaseModule } from './usecase/usecase.module';
 import { RouterModule } from '@angular/router';
+import {MatIconModule} from '@angular/material/icon';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { AboutComponent } from './about/about.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
-  declarations: [			
+  declarations: [					
     AppComponent,
       HomeComponent,
       ContactUsComponent,
-      PrivacyPolicyComponent
+      PrivacyPolicyComponent,
+      AboutComponent,
+      NavbarComponent
    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    UsecaseModule
+    UsecaseModule,
+    MatIconModule,
+    BrowserAnimationsModule
   ],
   providers: [
     provideClientHydration()

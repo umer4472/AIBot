@@ -34,4 +34,7 @@ export class HomeComponent implements AfterViewInit {
       }
     });
   }
+  onAbout(){
+    this.router.navigate(['/about']);
+  }
 }

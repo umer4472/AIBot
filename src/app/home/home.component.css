@@ -76,7 +76,6 @@ li span{
     position: absolute;
     top: 0;
     right: 25px;
-    /* background-color: #28a745; */
     color: black;
     width: 30px;
     height: 30px;
@@ -100,7 +99,6 @@ li span{
     padding-block: 70px;
 }
 .multicoulmn-wrapper-bg{
-
     background-color: #181819;
 }
 .multicoulmn-wrapper-bg .heading{
@@ -112,29 +110,23 @@ li span{
     margin-bottom: 40px;
     line-height: 55px;
     font-weight: 700;
-
 }
 .multicoulmn-wrapper-bg .column{
-
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 50%;
     padding: 40px;
-
 }
 
 .multicoulmn-wrapper-bg .column:nth-of-type(1){
     border-right: 1px solid #fff;
     border-bottom: 1px solid #fff;
-
 }
 .multicoulmn-wrapper-bg .column:nth-of-type(2){
-
     border-bottom: 1px solid #fff;
 }
 .multicoulmn-wrapper-bg .column:nth-of-type(3){
-
     border-right: 1px solid #fff;
 }
 
@@ -194,7 +186,6 @@ margin-bottom: unset;
     max-width: unset;
     text-align: left;
     color: rgb(175, 192, 193);
-
 }
 .multicoulmn-wrapper-bg-v2  .column{
     width: 30%;
@@ -204,10 +195,8 @@ margin-bottom: unset;
     background-color: #272729;
     border-radius: 30px;
     padding-block: 30px;
-
 }
 .multicoulmn-wrapper-bg-v2 .subheading{
-
     line-height: 42px;
 }
 .multicoulmn-wrapper-bg-v2 .subheading-icon{
@@ -222,7 +211,6 @@ margin-bottom: unset;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 .multicoulmn-wrapper-bg-v2 .text{
 padding-bottom: 58px;
@@ -431,54 +419,36 @@ width: 100%
     color: rgb(252, 104, 0);
     animation: 5s ease-in-out;
   }
-  .fadeIn {
-    animation: fadeIn 1s ease-out forwards;
+  footer{
+    background-color: #181819;
   }
+  .footer-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
   
-  .slideIn {
-    animation: slideIn 1s ease-out forwards;
   }
-  
-  .scaleIn {
-    animation: scaleIn 1s ease-out forwards;
+
+  .footer-list h2{
+    cursor: pointer;
   }
-  .animated {
-    opacity: 0; /* For fade-in animation */
-    transform: scale(0); /* For scale-in animation */
-  }
-  /* Define animation for fade-in effect */
-@keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  /* Define animation for slide-in effect */
-  @keyframes slideIn {
-    from {
-      transform: translateY(-50px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  
-  /* Define animation for scale-in effect */
-  @keyframes scaleIn {
-    from {
-      transform: scale(0);
-    }
-    to {
-      transform: scale(1);
-    }
-  }
-  
-  
+.footer-text{
+    display: flex;
+    justify-content: space-between;
+}
+.right-footer{
+    display: flex;
+    gap: 20px;
+}
+.list-unstyled{
+    display: flex;
+    gap: 20px;
+}
+mat-icon{
+    border-color: rgb(252, 104, 0);
+    font-size: 25px;
+    cursor: pointer;
+}
 
 
 

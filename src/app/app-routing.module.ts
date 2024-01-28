@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { ContactUsComponent } from './contactUs/contactUs.component';
 import { PrivacyPolicyComponent } from './privacyPolicy/privacyPolicy.component';
 import { GrammerCheckerComponent } from './usecase/grammerChecker/grammerChecker.component';
+import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
     path:'Usecase',
     component: GrammerCheckerComponent
   },
+  {
+    path:'about',
+    component: AboutComponent
+  }
 ];
 
 @NgModule({
