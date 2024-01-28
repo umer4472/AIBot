@@ -22,3 +22,12 @@ li span{
 .active span{
     color:  rgb(252, 104, 0);;
 }
+
+@media screen and (max-width: 991px) {
+    .navbar-nav {
+        cursor: pointer;
+        position: absolute;
+        width: 100%;
+        background-color: #181819;
+    }
+}
