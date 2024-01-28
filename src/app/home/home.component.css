@@ -1,3 +1,98 @@
+.background{
+   background-color: #181819;
+}
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-brand{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 500px;
+}
+.navbar-collapse{
+    flex-grow: unset;
+}
+li{
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 24px;
+}
+li span{
+    color: #fff;
+}
+.active span{
+    color:  rgb(252, 104, 0);;
+}
+
+.imgWithText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aiHeading{
+    font-size: 46px;
+    color: #fff;
+}
+.aipara{
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.aitext{
+   color: rgb(252, 104, 0);
+}
+
+.aiImg{
+    display: flex;
+    justify-content: right;
+}
+.imgWithTextV2{
+    background-color: #272729;
+}
+.aiImgV2{
+    display: flex;
+    justify-content: left;
+}
+.aiImgV2 img{
+    border-radius: 20px;
+}
+.aiContentv2{
+    padding: 35px;
+}
+.cardtext{
+    display: flex;
+    gap: 20px;
+    padding: 50px
+}
+.card {
+    position: relative;
+    border-radius: 20px;
+}
+
+.plus-sign {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    /* background-color: #28a745; */
+    color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.card-body {
+    text-align: center;
+}
+
+
 .page-width{
     max-width: 1400px;
     margin-inline: auto;
@@ -75,7 +170,6 @@
     border: 2px solid rgb(252, 104, 0);
     max-width: 152px;
     border-radius: 51px;
-
 }
 .multicoulmn-wrapper-bg-v2 .heading-wrapper{
     display: flex;
@@ -212,6 +306,24 @@ width: 100%
     .multicoulmn-wrapper-bg-v2 .icon{
         max-width: 35px;
     }
+    .imgWithTextV2{
+        display: flex;
+        width: unset;
+    }
+    .cardtext{
+        display: flex;
+        flex-direction: column;
+    }
+    .aiImg img{
+          width: 300px;
+    }
+    .aiImgV2 img{
+        width: 330px;
+        padding: 0;
+    }
+    .aiContentv2{
+        padding: 3px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -293,11 +405,80 @@ width: 100%
     .multicoulmn-wrapper-bg-video .center-img{
         margin-top: 30px;
         } 
+        .cardtext{
+            display: flex;
+            flex-direction: column;
+        }
+        .aiImg img{
+              width: 300px;
+        }
+        .aiImgV2 img{
+            width: 300px;
+        }
     
     }
     
-
-
+    .btn{
+        font-weight: 500;
+        color: #fff;
+        font-size: 26px;
+        border: 2px solid rgb(252, 104, 0);
+        max-width: 180px;
+        border-radius: 50px;
+        padding: 12px;
+    }
+  .btn:hover{
+    color: rgb(252, 104, 0);
+    animation: 5s ease-in-out;
+  }
+  .fadeIn {
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  .slideIn {
+    animation: slideIn 1s ease-out forwards;
+  }
+  
+  .scaleIn {
+    animation: scaleIn 1s ease-out forwards;
+  }
+  .animated {
+    opacity: 0; /* For fade-in animation */
+    transform: scale(0); /* For scale-in animation */
+  }
+  /* Define animation for fade-in effect */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Define animation for slide-in effect */
+  @keyframes slideIn {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Define animation for scale-in effect */
+  @keyframes scaleIn {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  
 
 
 
