@@ -1,0 +1,282 @@
+.contactMain {
+    position: relative;
+    max-width: 1900px;
+    margin-inline: auto;
+    overflow: hidden;
+    padding-top: 81px;
+}
+
+.callIcon {
+    display: flex;
+    gap: 15px;
+}
+
+.callIconImage {
+    height: 45px;
+}
+
+.callIcon h1 {
+    color: #fff ;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 35px;
+}
+
+.contactForm {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.contactCard {
+    position: relative;
+    overflow: hidden;
+    background-color: #2d2d2e;
+    border-radius: 34px;
+    width: 555px;
+    height: 605px;
+}
+
+.contactUs {
+    width: 530px;
+}
+
+.card {
+    padding-right: 25px;
+    padding-left: 40px;
+    position: relative;
+    padding-top: 40px;
+    background-color: #2d2d2e;
+}
+
+.title {
+    width: 80%;
+    height: 20px;
+    padding-top: 110px;
+    color: #f1f3f5;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.sub {
+    padding-top: 170px;
+    color: #f1f3f5;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+    width: 360px;
+}
+
+.sub span {
+    color: #969795;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+  }
+  .formbold-mb-5 {
+    margin-bottom: 20px;
+  }
+  .formbold-pt-3 {
+    padding-top: 12px;
+  }
+  .formbold-main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+  }
+
+  .formbold-form-wrapper {
+    margin: 0 auto;
+    max-width: 550px;
+    width: 100%;
+    background: white;
+  }
+  .formbold-form-label {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    color: #07074d;
+    margin-bottom: 12px;
+  }
+  .formbold-form-label-2 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .formbold-form-input {
+    width: 100%;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    background: white;
+    font-weight: 500;
+    font-size: 16px;
+    color: #6b7280;
+    outline: none;
+    resize: none;
+  }
+  .formbold-form-input:focus {
+    border-color: #5c5c5f;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .formbold-btn {
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 14px 32px;
+    border: none;
+    font-weight: 600;
+    background-color: #292928;
+    color: white;
+    cursor: pointer;
+  }
+  .formbold-btn:hover {
+    box-shadow: 0px 3px 8px rgba(12, 95, 23, 0.05);
+    background-color: #5c5c5f;
+    transition: 300ms ease-in-out;
+  }
+
+  .formbold--mx-3 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  .formbold-px-3 {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .flex {
+    display: flex;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .w-full {
+    width: 100%;
+  }
+  @media (min-width: 540px) {
+    .sm\:w-half {
+      width: 50%;
+    }
+  }
+
+@media only screen and (max-width: 1150px) {
+    .contactCard {
+        width: 50%;
+    }
+
+    .contactUs {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .contactForm {
+        flex-direction: column;
+    }
+
+    .contactCard {
+        width: 90%;
+    }
+
+    .contactUs {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .contactCard {
+        width: 90%;
+        background: none;
+        height: 20%;
+        border-radius: 0;
+    }
+
+    .contactUs {
+        width: 90%;
+    }
+
+    .lower,
+    .upper {
+        display: none;
+    }
+
+    .callIcon h3 {
+        color: #898989;
+        font-weight: 600px;
+        font-size: 26px;
+    }
+
+    .title {
+        padding-top: 20px;
+        color: #151515;
+        font-size: 30px;
+    }
+
+    .circle {
+        display: none;
+    }
+
+    .sub {
+        width: 400px;
+        padding-top: 62px;
+        color: #676666;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .sub span {
+        color: #969795;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .card {
+        padding-right: 0;
+        padding-left: 0;
+        position: relative;
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .callIcon h3 {
+        font-size: 22px;
+    }
+
+    .callIcon img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .title {
+        width: 297px;
+    }
+
+    .sub {
+        width: 310px;
+        padding-top: 90px;
+        color: #676666;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .sub span {
+        color: #969795;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
