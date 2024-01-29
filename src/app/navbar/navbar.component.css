@@ -12,9 +12,9 @@
     flex-grow: unset;
 }
 li{
+    margin-inline: auto ;
     font-size: 24px;
     cursor: pointer;
-    margin-left: 24px;
 }
 li span{
     color: #fff;
@@ -37,11 +37,35 @@ color: #fff;
     color:  rgb(252, 104, 0);
 }
 
-@media screen and (max-width: 991px) {
+.nav-link:hover {
+    color:  rgb(252, 104, 0);
+    transition: color 0.3s ease-in-out;
+  }
+
+  @media screen and (max-width: 991px) {
     .navbar-nav {
         cursor: pointer;
         position: absolute;
+        left: 0;
         width: 100%;
         background-color: #181819;
+        transition: max-height 0.3s ease-in-out;
+        padding-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(44, 43, 43, 0.5);
+    }
+
+    .navbar-toggler {
+        background-color: #fff;
+        border: 1px solid white;
+        transition: opacity 0.3s ease-out;
+    }
+
+    .navbar-toggler-icon {
+        transition: transform 0.3s ease-out;
+    }
+  
+    .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+        transform: rotate(180deg);
     }
 }
+
