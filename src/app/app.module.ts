@@ -13,6 +13,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { AboutComponent } from './about/about.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { GrammerCheckerComponent } from './usecase/grammerChecker/grammerChecker.component';
+import { PlagiarismCheckerComponent } from './usecase/plagiarismChecker/plagiarismChecker.component';
+import { ChatBotComponent } from './usecase/chatBot/chatBot.component';
 
 
 @NgModule({
@@ -22,8 +25,11 @@ import { FooterComponent } from './footer/footer.component';
       ContactUsComponent,
       PrivacyPolicyComponent,
       AboutComponent,
-      NavbarComponent,
-      FooterComponent
+      FooterComponent,
+      GrammerCheckerComponent,
+      PlagiarismCheckerComponent,
+      ChatBotComponent,
+      NavbarComponent
    ],
   imports: [
     BrowserModule,
