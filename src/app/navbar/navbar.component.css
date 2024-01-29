@@ -2,7 +2,7 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #181819;
+    background-color: #000;
 }
 .navbar-brand{
     color: #fff;
@@ -12,6 +12,10 @@
 .navbar-collapse{
     flex-grow: unset;
 }
+ul li{
+    margin-left: 20px;
+}
+
 li{
     margin-inline: auto ;
     font-size: 24px;

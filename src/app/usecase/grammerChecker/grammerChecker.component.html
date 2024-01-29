@@ -1,1 +1,32 @@
+<div class="plagrism-checker">
+  <div class="page-width ">
+  <div class="heading"> 
+    Plagiarism Checker by Ai Bot
+  </div>
+  <div class="subheading"> 
+    Grammarly’s plagiarism checker detects plagiarism in your text and checks for other writing issues.
+  </div>
+  
+  
 
+
+
+<div class="container">
+  <textarea [(ngModel)]="textToCheck" (input)="countWords()" placeholder="Enter text to check" [maxlength]="maxWords * 5"></textarea>
+  <div>
+    <p>{{ wordCount }} / 1000</p>
+    <p *ngIf="wordCount > maxWords">You've exceeded the word limit!</p>
+  </div>
+  <div>
+    <input type="file" id="fileInput" (change)="onFileSelected($event)">
+  </div>
+  <button (click)="checkGrammar()">Check Grammar</button>
+  <div *ngIf="errors && errors.length > 0">
+    <h2>Results:</h2>
+    <ul>
+      <li *ngFor="let error of errors">{{ error }}</li>
+    </ul>
+  </div>
+</div>
+</div>
+</div>

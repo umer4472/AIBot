@@ -16,6 +16,8 @@ import { FooterComponent } from './footer/footer.component';
 import { GrammerCheckerComponent } from './usecase/grammerChecker/grammerChecker.component';
 import { PlagiarismCheckerComponent } from './usecase/plagiarismChecker/plagiarismChecker.component';
 import { ChatBotComponent } from './usecase/chatBot/chatBot.component';
+import { FormsModule } from '@angular/forms';
+import TextGears from 'textgears-api';
 
 
 @NgModule({
@@ -37,7 +39,8 @@ import { ChatBotComponent } from './usecase/chatBot/chatBot.component';
     RouterModule,
     UsecaseModule,
     MatIconModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()

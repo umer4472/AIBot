@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./chatBot.component.css']
 })
 export class ChatBotComponent implements OnInit {
+  messages: string[] = [];
+
+  sendMessage(message: string) {
+    this.messages.push(message);
+  }
 
   constructor() { }
 
