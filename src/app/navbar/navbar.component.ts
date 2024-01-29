@@ -16,5 +16,20 @@ export class NavbarComponent implements OnInit {
   onAbout(){
     this.router.navigate(['/about']);
   }
+  onHome(){
+    this.router.navigate(['']);
+  }
+  onContact(){
+    this.router.navigate(['/ContactUs']);
+  }
+  OnGrammerchecker(){
+    this.router.navigate(['/GrammerChecker']);
+  }
+  Onplagiarismchecker(){
+    this.router.navigate(['/PlagiarismChecker']);
+  }
+  OnchatBot(){
+    this.router.navigate(['/ChatBot']);
+  }
 
 }

@@ -37,4 +37,13 @@ export class HomeComponent implements AfterViewInit {
   onAbout(){
     this.router.navigate(['/about']);
   }
+  OnGrammerchecker(){
+    this.router.navigate(['/GrammerChecker']);
+  }
+  Onplagiarismchecker(){
+    this.router.navigate(['/PlagiarismChecker']);
+  }
+  OnchatBot(){
+    this.router.navigate(['/ChatBot']);
+  }
 }

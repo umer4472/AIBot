@@ -15,15 +15,22 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <span class="nav-link">Home </span>
+          <span class="nav-link" (click)="onHome()">Home </span>
         </li>
-        <li class="nav-item">
-          <span class="nav-link">Usecases</span>
+        <li class="nav-item dropdown">
+          <span class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Usecases
+          </span>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <span class="dropdown-item" (click)= "OnGrammerchecker()">Grammer Checker</span>
+            <span class="dropdown-item" (click)="Onplagiarismchecker()">Plagiarism Checker</span>
+            <span class="dropdown-item" (click)=" OnchatBot()">Chat Bot</span>
+          </div>
         </li>
         <li class="nav-item" (click)="onAbout()">
           <span class="nav-link">About</span>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" (click)="onContact()">
           <span class="nav-link">Contact Us</span>
         </li>
       </ul>

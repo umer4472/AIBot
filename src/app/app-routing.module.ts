@@ -5,6 +5,8 @@ import { ContactUsComponent } from './contactUs/contactUs.component';
 import { PrivacyPolicyComponent } from './privacyPolicy/privacyPolicy.component';
 import { GrammerCheckerComponent } from './usecase/grammerChecker/grammerChecker.component';
 import { AboutComponent } from './about/about.component';
+import { PlagiarismCheckerComponent } from './usecase/plagiarismChecker/plagiarismChecker.component';
+import { ChatBotComponent } from './usecase/chatBot/chatBot.component';
 
 const routes: Routes = [
   {
@@ -20,12 +22,20 @@ const routes: Routes = [
     component: PrivacyPolicyComponent
   },
   {
-    path:'Usecase',
-    component: GrammerCheckerComponent
-  },
-  {
     path:'about',
     component: AboutComponent
+  },
+  {
+    path:'GrammerChecker',
+    component: GrammerCheckerComponent,
+  },
+  {
+    path:'PlagiarismChecker',
+    component: PlagiarismCheckerComponent
+  },
+  {
+    path:'ChatBot',
+    component: ChatBotComponent
   }
 ];
 

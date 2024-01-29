@@ -19,8 +19,22 @@ li{
 li span{
     color: #fff;
 }
+.dropdown-menu{
+background-color: #181819;
+}
+.dropdown-menu span{
+    color: #fff;
+}
+.dropdown-menu span:hover{
+    color: rgb(252, 104, 0);
+}
+.nav-link.show{
+color: #fff;
+}
+
+
 .active span{
-    color:  rgb(252, 104, 0);;
+    color:  rgb(252, 104, 0);
 }
 
 @media screen and (max-width: 991px) {

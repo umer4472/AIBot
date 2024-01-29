@@ -1,7 +1,7 @@
 <div class="background">
   <app-navbar></app-navbar>
   <div class="container">
-    <div class="row imgWithText animated slideIn">
+    <div class="row imgWithText">
       <div class="col-md-6 aiContent">
         <h1 class="aiHeading">
           UNLOCKING THE POTENTIAL OF
@@ -148,24 +148,24 @@
       </p>
     </div>
     <div class="multicolumn">
-      <div class="column">
+      <div class="column"(click)="OnGrammerchecker()">
         <div class="subheading">
           <div class="subheading-icon">
             <img src="../../assets/images/Group-27.png" alt="" class="icon" />
           </div>
-          Analytics and Insight
+          Grammer Checker
         </div>
         <div class="text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </div>
       </div>
-      <div class="column">
+      <div class="column"  (click)="Onplagiarismchecker()" >
         <div class="subheading">
           <div class="subheading-icon">
             <img src="../../assets/images/Group-30.png" alt="" class="icon" />
           </div>
-          Scalability and Efficiency
+          Plagiarism Checker
         </div>
 
         <div class="text">
@@ -173,12 +173,12 @@
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </div>
       </div>
-      <div class="column">
+      <div class="column" (click)="OnchatBot()">
         <div class="subheading">
           <div class="subheading-icon">
             <img src="../../assets/images/Group-23.png" alt="" class="icon" />
           </div>
-          Natural Language Processing
+          Chat Bot
         </div>
         <div class="text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -195,6 +195,11 @@
     <div class="text">Lorem ipsum dolor sit amet ut labore et.</div>
 
     <img src="../../assets/images/Mask-group-2.png" alt="" class="center-img" />
+
+    <video controls class="center-img">
+      <source src="../../assets/images/video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
   </div>
 </div>
 
