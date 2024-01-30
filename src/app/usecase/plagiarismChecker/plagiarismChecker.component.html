@@ -1,32 +1,119 @@
 <div class="plagrism-checker">
-  <div class="page-width ">
-  <div class="heading"> 
-    Plagiarism Checker by Ai Bot
-  </div>
-  <div class="subheading"> 
-    Grammarly’s plagiarism checker detects plagiarism in your text and checks for other writing issues.
-  </div>
-  
-  
+  <div class="page-width">
+    <div class="heading">Plagiarism Checker by Ai Bot</div>
+    <div class="subheading">
+      Aibot’s Plagiarism checker detects plagiarism in your text and checks for
+      other writing issues.
+    </div>
+
+    <div class="container">
+      <textarea
+        [(ngModel)]="textToCheck"
+        (input)="countWords()"
+        placeholder="Enter text to check"
+        [maxlength]="maxWords * 5"
+      ></textarea>
+      <div class="btn-words">
+        <div class="upload-grammer-button">
+          <button class="btn" (click)="checkGrammar()">Check Grammar</button>
+          <input
+            hidden
+            type="file"
+            accept=".csv, .txt"
+            #fileInput
+            (change)="onFileSelected($event)"
+          />
+          <button class="btn upload-btn" (click)="fileInput.click()">
+            <span>Upload a file</span> 
+            <mat-icon class="mat-icon">cloud_upload</mat-icon>
+          </button>
+        </div>
+        <div class="words-count">
+          <p>{{ wordCount }} / 1000</p>
+          <p *ngIf="wordCount > maxWords">You've exceeded the word limit!</p>
+        </div>
+      </div>
+
+      <div class="errors">
+        <h2>Results:</h2>
+        <ul>
+          <li> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus libero voluptatum ducimus odio fugit, iure consectetur velit consequuntur autem sequi animi. Numquam accusamus quibusdam aliquid sed quae recusandae blanditiis nobis?</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="multicoulmn-wrapper-bg">
+      <div class="multicoulmn-wrapper page-width">
+        <div class="heading">Simplify Your Writing Workflow</div>
+        <div class="multicolumn">
+          <div class="column">
+            <div class="subheading">
+              <img
+                src="../../../assets/images/correctgrammer.svg"
+                alt=""
+                class="subheading-icon"
+              />
+              Correct Grammar
+            </div>
+            <div class="text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </div>
+          <div class="column">
+            <div class="subheading">
+              <img
+              src="../../../assets/images/spelling.svg"
+                alt=""
+                class="subheading-icon"
+              />
+              Correct spelling
+            </div>
+    
+            <div class="text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </div>
+          <div class="column">
+            <div class="subheading">
+              <img
+                src="../../../assets/images/punctuations.svg"
+                alt=""
+                class="subheading-icon"
+              />
+              Correct punctuation
+            </div>
+            <div class="text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </div>
+          <div class="column">
+            <div class="subheading">
+              <img
+              src="../../../assets/images/grammaticalError.svg"
+                alt=""
+                class="subheading-icon"
+              />
+              Fix All Errors
+            </div>
+            <div class="text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
 
 
 
-<div class="container">
-  <textarea [(ngModel)]="textToCheck" (input)="countWords()" placeholder="Enter text to check" [maxlength]="maxWords * 5"></textarea>
-  <div>
-    <p>{{ wordCount }} / 1000</p>
-    <p *ngIf="wordCount > maxWords">You've exceeded the word limit!</p>
-  </div>
-  <div>
-    <input type="file" id="fileInput" (change)="onFileSelected($event)">
-  </div>
-  <button (click)="checkGrammar()">Check Grammar</button>
-  <div *ngIf="errors && errors.length > 0">
-    <h2>Results:</h2>
-    <ul>
-      <li *ngFor="let error of errors">{{ error }}</li>
-    </ul>
+
+
   </div>
 </div>
-</div>
-</div>
+
+<!-- *ngIf="errors && errors.length > 0" -->
+<!-- *ngFor="let error of errors" -->

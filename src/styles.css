@@ -65,3 +65,18 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     
     }
 }
+
+.btn{
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    border: 2px solid rgb(252, 104, 0);
+    max-width: 180px;
+    border-radius: 50px;
+    padding: 12px;
+}
+.btn:hover{
+color: rgb(252, 104, 0);
+animation: 5s ease-in-out;
+border:2px solid #fff;
+}
