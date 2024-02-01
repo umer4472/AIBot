@@ -18,6 +18,9 @@ import { PlagiarismCheckerComponent } from './usecase/plagiarismChecker/plagiari
 import { ChatBotComponent } from './usecase/chatBot/chatBot.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { QuillModule } from 'ngx-quill';
+import { NgxSpinnerModule } from 'ngx-spinner';
+
 
 
 @NgModule({
@@ -40,7 +43,9 @@ import { HttpClientModule } from '@angular/common/http';
     UsecaseModule,
     MatIconModule,
     BrowserAnimationsModule,
-    FormsModule,HttpClientModule
+    FormsModule,HttpClientModule,
+    QuillModule.forRoot(),
+    NgxSpinnerModule
   ],
   providers: [
     provideClientHydration()

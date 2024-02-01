@@ -5,7 +5,6 @@
       Aibot’s Plagiarism checker detects plagiarism in your text and checks for
       other writing issues.
     </div>
-
     <div class="container">
       <textarea
         [(ngModel)]="textToCheck"
@@ -15,7 +14,7 @@
       ></textarea>
       <div class="btn-words">
         <div class="upload-grammer-button">
-          <button class="btn" (click)="checkGrammar()">Check Grammar</button>
+          <!-- <button class="btn" (click)="checkGrammar()">Check Grammar</button> -->
           <input
             hidden
             type="file"
@@ -27,18 +26,37 @@
             <span>Upload a file</span> 
             <mat-icon class="mat-icon">cloud_upload</mat-icon>
           </button>
+    
+          <button class="btn" (click)="checkPlagiarism()">Check Plagiarism</button>
         </div>
         <div class="words-count">
           <p>{{ wordCount }} / 1000</p>
           <p *ngIf="wordCount > maxWords">You've exceeded the word limit!</p>
         </div>
       </div>
-
-      <div class="errors">
-        <h2>Results:</h2>
-        <ul>
-          <li> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus libero voluptatum ducimus odio fugit, iure consectetur velit consequuntur autem sequi animi. Numquam accusamus quibusdam aliquid sed quae recusandae blanditiis nobis?</li>
+    
+      <!-- <div class="errors" *ngIf="plagiarismResult">
+        <h2>Plagiarism Check Results:</h2>
+        <p>Percentage of Plagiarism: {{ plagiarismResult.percentPlagiarism }}%</p>
+        <ul *ngIf="plagiarismResult.sources && plagiarismResult.sources.length > 0">
+          <li *ngFor="let source of plagiarismResult.sources">
+            <a href="{{ source.url }}" target="_blank">{{ source.title }}</a>
+          </li>
         </ul>
+        <p *ngIf="!plagiarismResult.sources || plagiarismResult.sources.length === 0">No sources found.</p>
+      </div> -->
+    
+      <div class="errors" *ngIf="plagiarismResult">
+        <h5 >Plagiarism Check Results:</h5>
+        <p class="plag-text">Percentage of Plagiarism: {{ plagiarismResult.percentPlagiarism }}%</p>
+        <ul *ngIf="plagiarismResult.sources && plagiarismResult.sources.length > 0">
+          <h5 >Sources:</h5>
+          <li *ngFor="let source of plagiarismResult.sources">
+       
+            <a href="{{ source.url }}" target="_blank">{{ source.title }}</a>
+          </li>
+        </ul>
+        <p class="plag-text" *ngIf="!plagiarismResult.sources || plagiarismResult.sources.length === 0">No sources found.</p>
       </div>
     </div>
     
@@ -196,3 +214,6 @@
 
 <!-- *ngIf="errors && errors.length > 0" -->
 <!-- *ngFor="let error of errors" -->
+<ngx-spinner>
+  <div class="loader"></div>
+</ngx-spinner>
