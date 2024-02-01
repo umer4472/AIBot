@@ -384,7 +384,7 @@
          padding: 12px;
      }
    .btn:hover{
-     color: rgb(252, 104, 0);
+     color: rgb(252, 104, 0) !important;
      animation: 5s ease-in-out;
    }
  
