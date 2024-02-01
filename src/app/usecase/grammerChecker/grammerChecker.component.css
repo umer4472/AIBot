@@ -14,7 +14,7 @@ textarea {
   }
   li {
     padding-left :120px;
-    color: rgb(252, 104, 0); /* Error color */
+    color: #fff; /* Error color */
   }
   .plagrism-checker{
     background-color: #181819;
@@ -128,4 +128,37 @@ border:2px solid #fff;
     border: 2px solid rgb(252, 104, 0);
     max-width: 152px;
     border-radius: 51px;
+}
+
+
+/* FAQS */
+
+.accordion-button::after {
+    background: white;
+    flex-shrink: 0;
+    width: var(--bs-accordion-btn-icon-width);
+    height: var(--bs-accordion-btn-icon-width);
+    margin-left: auto;
+    content: "";
+    background-image: var(--bs-accordion-btn-icon);
+    background-repeat: no-repeat;
+    background-size: var(--bs-accordion-btn-icon-width);
+    transition: var(--bs-accordion-btn-icon-transition);
+    border-radius: 5px;
+    outline: none;
+}
+.accordion-button:not(.collapsed)::after {
+    background: white;
+    background-image: var(--bs-accordion-btn-active-icon);
+    transform: var(--bs-accordion-btn-icon-transform);
+    border-radius: 5px;
+    outline: none;
+}
+.accordion-button{
+    background-color: #181819;
+    color: white;
+    outline: none;
+}
+button:focus:not(:focus-visible){
+    box-shadow: none;
 }

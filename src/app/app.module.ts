@@ -17,7 +17,7 @@ import { GrammerCheckerComponent } from './usecase/grammerChecker/grammerChecker
 import { PlagiarismCheckerComponent } from './usecase/plagiarismChecker/plagiarismChecker.component';
 import { ChatBotComponent } from './usecase/chatBot/chatBot.component';
 import { FormsModule } from '@angular/forms';
-import TextGears from 'textgears-api';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -40,7 +40,7 @@ import TextGears from 'textgears-api';
     UsecaseModule,
     MatIconModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,HttpClientModule
   ],
   providers: [
     provideClientHydration()
