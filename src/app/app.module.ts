@@ -1,6 +1,5 @@
-import { NgModule } from '@angular/core';
+import { NgModule,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -17,9 +16,12 @@ import { GrammerCheckerComponent } from './usecase/grammerChecker/grammerChecker
 import { PlagiarismCheckerComponent } from './usecase/plagiarismChecker/plagiarismChecker.component';
 import { ChatBotComponent } from './usecase/chatBot/chatBot.component';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { QuillModule } from 'ngx-quill';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { Router } from '@angular/router';
+import { AuthInterceptorService } from './services/authInterception';
+import { provideHttpClient, withFetch } from '@angular/common/http';
 
 
 
@@ -45,11 +47,19 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     BrowserAnimationsModule,
     FormsModule,HttpClientModule,
     QuillModule.forRoot(),
-    NgxSpinnerModule
+    NgxSpinnerModule,
   ],
   providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass:AuthInterceptorService,
+      multi: true,
+      deps: [Router]
+    },
+    provideHttpClient(withFetch()),
     provideClientHydration()
   ],
+  schemas:[CUSTOM_ELEMENTS_SCHEMA] ,
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -12,9 +12,9 @@
         placeholder="Enter text to check"
         [maxlength]="maxWords * 5"
       ></textarea>
-      <div class="btn-words">
+      <!-- <div class="btn-words">
         <div class="upload-grammer-button">
-          <!-- <input
+          <input
             hidden
             type="file"
             accept=".csv, .txt"
@@ -27,13 +27,13 @@
           </button>
     
           <button class="btn" (click)="checkPlagiarism()">Check Plagiarism</button>
-        </div> -->
+        </div>
         <div class="words-count">
           <p>{{ wordCount }} / 1000</p>
           <p *ngIf="wordCount > maxWords">You've exceeded the word limit!</p>
         </div>
       </div>
-    
+     -->
       <!-- <div class="errors" *ngIf="plagiarismResult">
         <h2>Plagiarism Check Results:</h2>
         <p>Percentage of Plagiarism: {{ plagiarismResult.percentPlagiarism }}%</p>
@@ -213,6 +213,6 @@
 
 <!-- *ngIf="errors && errors.length > 0" -->
 <!-- *ngFor="let error of errors" -->
-<ngx-spinner>
-  <div class="loader"></div>
-</ngx-spinner>
+
+<ngx-spinner bdColor="rgba(51,51,51,0.8)" size="large" color="#fbb71a" type="ball-circus" [fullScreen] = "true"></ngx-spinner>
+
