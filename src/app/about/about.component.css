@@ -381,7 +381,22 @@
              width: 300px;
          }
      
-     }
+     
+         .aiHeading{
+            font-size: 24px;
+            padding-top: 40px;
+
+         }  
+         .aipara{
+            font-size: 16px;
+
+         }
+         .btn{
+            font-size: 16px !important;
+             min-width: 140px;
+
+         }
+         }
      
      .btn{
          font-weight: 500;

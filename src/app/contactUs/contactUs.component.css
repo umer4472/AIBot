@@ -315,7 +315,21 @@ width: 100%
           width: 300px;
       }
   
-  }
+      .aiHeading{
+        font-size: 24px;
+        padding-top: 40px;
+
+     }  
+     .aipara{
+        font-size: 16px;
+
+     }
+     .btn{
+      font-size: 16px !important;
+         min-width: 140px;
+
+     }
+    }
 
 @media screen and (max-width: 1024px){
   .aiImg img{

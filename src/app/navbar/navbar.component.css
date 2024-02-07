@@ -73,4 +73,22 @@ color: #fff;
         transform: rotate(180deg);
     }
 }
+@media screen and (max-width: 768px) {
+.nav-link
+{
+font-size: 18px;
+
+}
+button.navbar-toggler span{
+
+    max-width: 18px;
+    max-height: 21px;
+}
+button.navbar-toggler{
+    padding-inline: 7px;
+    padding-block: 3px;
+
+
+}
+}
 

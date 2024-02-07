@@ -162,3 +162,112 @@ border:2px solid #fff;
 button:focus:not(:focus-visible){
     box-shadow: none;
 }
+
+@media screen and (max-width: 768px) {
+    .upload-btn, .btn {
+        width: 100%;
+        min-width: 100%;
+    }
+    .btn-words {
+        flex-wrap: wrap;
+    }
+    .btn-words .upload-grammer-button {
+        min-width: 100%;
+        flex-wrap: wrap;
+        order: 2;
+    }
+    .words-count {
+        min-width: 100%;
+        order: 1;
+    }
+    .words-count p{
+
+        text-align: center;
+    }
+    .multicoulmn-wrapper-bg  .column{
+        width: 100%;
+        border-right: none;
+        justify-content: center;
+        padding-inline: 0;
+        padding-block: 30px;
+        gap: 10px;
+        min-height: unset;
+    }
+    
+    .multicoulmn-wrapper-bg .subheading{
+        flex-direction: column;
+        font-size: 22px;
+        gap: 16px;
+    }
+    .multicoulmn-wrapper-bg .subheading-icon{
+        max-width: 60px;
+        padding: 14px;
+    }
+    .multicoulmn-wrapper-bg .text{
+       text-align: center;
+       font-size: 16px;
+    }
+    
+    .multicoulmn-wrapper-bg .btn{
+       margin-inline: auto;
+       margin-top: 10px;
+       font-size: 16px;
+       min-width: 153px;
+     }
+     .multicoulmn-wrapper-bg .column:nth-of-type(1){
+        border-right: none;
+    
+    }
+    .multicoulmn-wrapper-bg .column:nth-of-type(3){
+        border-right: none;
+        border-bottom: 1px solid #fff;
+    }
+    .multicoulmn-wrapper-bg .heading{
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 0;
+    
+    }
+    .multicoulmn-wrapper-bg .column:nth-of-type(4){
+        padding-bottom: 0;
+
+    }
+    .multicoulmn-wrapper-bg-v2 .icon{
+        max-width: 35px;
+    }
+    .multicoulmn-wrapper-bg-v2 .multicolumn{
+        flex-wrap: wrap;
+        gap: 60px;
+    }
+    .multicoulmn-wrapper-bg-v2 .heading-wrapper .heading{
+        width: 100%;
+    }
+    .multicoulmn-wrapper-bg-v2 .column{
+        justify-content: left;
+        align-items: flex-start;
+        padding-inline: 20px;
+    }
+    .multicoulmn-wrapper-bg-v2 .subheading{
+        text-align: left;
+    }
+    .multicoulmn-wrapper-bg-v2 .text{
+
+        text-align: left;
+    }
+
+    .multicoulmn-wrapper-bg-video .center-img{
+        margin-top: 30px;
+        } 
+        #accordionExample{
+
+            padding-top: 40px;
+        }
+        .question{
+            font-size: 17px;
+            font-weight: 700;
+        }
+        .answer{
+            font-size: 15px;
+            font-weight: 300;
+        }
+    }

@@ -232,7 +232,10 @@
  }
  .multicoulmn-wrapper-bg-video .text{
      text-align: center;
-  }
+  }   
+  .aiImgV2 img{
+    object-fit:cover ;
+ }
  @media screen and (max-width: 1242px) {
      .multicoulmn-wrapper-bg-v2  .column{
          min-height: 462px;
@@ -302,6 +305,7 @@
      .aiContentv2{
          padding: 3px;
      }
+  
  }
  
  @media screen and (max-width: 768px) {
@@ -390,7 +394,27 @@
              width: 300px;
          }
      
-     }
+         .aiHeading{
+            font-size: 24px;
+            padding-top: 40px;
+
+         }  
+         .aipara{
+            font-size: 16px;
+
+         }
+         .btn{
+            font-size: 16px !important;
+             min-width: 140px;
+
+         }
+         .aiImgV2{
+            justify-content:center ;
+         } 
+          .aiImgV2 img{
+            width: 100%;
+         }
+        }
      
      .btn{
          font-weight: 500;

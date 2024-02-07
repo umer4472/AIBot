@@ -49,3 +49,12 @@ mat-icon{
         align-items: center;
       }
 }
+@media screen and (max-width: 576px) {
+  .right-footer{
+      flex-wrap: wrap;
+  }
+  .right-footer h5{
+      width: 100%;
+  }
+  
+  }
