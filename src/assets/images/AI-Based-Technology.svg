@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="59" height="60" viewBox="0 0 59 60">
+  <g id="AI-Based_Technology" data-name="AI-Based Technology" transform="translate(-794.5 -741.5)">
+    <g id="Ellipse_6" data-name="Ellipse 6" transform="translate(794.5 741.5)" fill="#fff" stroke="#f3f5f8" stroke-width="1">
+      <ellipse cx="29.5" cy="30" rx="29.5" ry="30" stroke="none"/>
+      <ellipse cx="29.5" cy="30" rx="29" ry="29.5" fill="none"/>
+    </g>
+    <g id="Group_158" data-name="Group 158" transform="translate(806.024 754.234)">
+      <g id="Group_157" data-name="Group 157">
+        <g id="Group_155" data-name="Group 155" transform="translate(21.072 13.486)">
+          <rect id="Rectangle_94" data-name="Rectangle 94" width="1.517" height="8.344"/>
+        </g>
+        <g id="Group_156" data-name="Group 156">
+          <path id="Path_58" data-name="Path 58" d="M39.817,22.9V21.421H32.374V18.683H37.71V17.208H32.374V13H27.108V6.606H25.634V13H22.9V4.5H21.421V13H18.683V6.606H17.208V13H11.942v4.213H6.606v1.474h5.336v2.738H4.5V22.9h7.442v2.738H6.606v1.474h5.336v4.213h5.266V37.71h1.474V31.321H21.42v8.5H22.9v-8.5h2.738V37.71h1.474V31.321h5.266V27.108H37.71V25.634H32.374V22.9ZM30.9,29.847H13.417V14.47H30.9Z" transform="translate(-4.5 -4.5)"/>
+          <path id="Path_59" data-name="Path 59" d="M306.974,208.294H305.5V200.5h1.474Z" transform="translate(-284.366 -186.738)"/>
+        </g>
+      </g>
+      <path id="Path_60" data-name="Path 60" d="M185.5,200.5v7.794h1.474v-2.106h2.738v2.106h1.474V200.5Zm4.213,4.213h-2.738v-2.738h2.738Z" transform="translate(-172.792 -186.738)"/>
+    </g>
+  </g>
+</svg>

@@ -10,7 +10,7 @@ import { NgxSpinnerComponent, NgxSpinnerService } from 'ngx-spinner';
 export class PlagiarismCheckerComponent implements OnInit {
   textToCheck: string = '';
   wordCount: number = 0;
-  maxWords: number = 1000; // Max words limit
+  maxWords: number = 10000; // Max words limit
   errors: string[] = []; // Initialize errors as an empty array
   plagiarismResult: any = null;
 
