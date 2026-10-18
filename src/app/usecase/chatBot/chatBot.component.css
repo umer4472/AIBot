@@ -2,7 +2,7 @@
 
 .chat-container {
     width: 300px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--taupe);
     border-radius: 5px;
     overflow: hidden;
   }
@@ -14,7 +14,7 @@
   }
   
   .message {
-    background-color: #f2f2f2;
+    background-color: var(--surface);
     padding: 5px 10px;
     border-radius: 5px;
     margin-bottom: 5px;
@@ -29,21 +29,21 @@
   .input-container input {
     flex: 1;
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--taupe);
     border-radius: 3px;
   }
   
   .input-container button {
     padding: 8px 15px;
     margin-left: 10px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: var(--walnut);
+    color: var(--cream);
     border: none;
     border-radius: 3px;
     cursor: pointer;
   }
   
   .input-container button:hover {
-    background-color: #0056b3;
+    background-color: var(--mocha);
   }
   

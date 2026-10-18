@@ -1,60 +1,78 @@
-footer{
-    background-color: #000;
-  }
-  .footer-list{
-    display: flex;
-    justify-content: space-between;
+footer {
+  background-color: var(--ink);
+  color: var(--cream);
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-list h2 {
+  cursor: pointer;
+}
+
+.footer-list h5 {
+  color: var(--cream);
+}
+
+.footer-text {
+  display: flex;
+  justify-content: space-between;
+  color: var(--sand);
+}
+
+.right-footer {
+  display: flex;
+  gap: 20px;
+}
+
+.list-unstyled {
+  display: flex;
+  gap: 20px;
+}
+
+mat-icon {
+  border-color: var(--amber);
+  color: var(--amber);
+  font-size: 25px;
+  cursor: pointer;
+}
+
+hr {
+  border-color: var(--walnut);
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-list {
+    flex-direction: column;
     align-items: center;
-    gap: 20px;
-  
+    text-align: center;
   }
 
-  .footer-list h2{
-    cursor: pointer;
+  .footer-list h5 {
+    margin-bottom: 10px;
   }
-.footer-text{
-    display: flex;
-    justify-content: space-between;
+
+  .list-unstyled {
+    justify-content: center;
+  }
+
+  .footer-text {
+    flex-direction: column;
+    align-items: center;
+  }
 }
-.right-footer{
-    display: flex;
-    gap: 20px;
-}
-.list-unstyled{
-    display: flex;
-    gap: 20px;
-}
-mat-icon{
-    border-color: rgb(252, 104, 0);
-    font-size: 25px;
-    cursor: pointer;
-}
-@media screen and (max-width: 768px) {
-    .footer-list {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-    
-      .footer-list h5 {
-        margin-bottom: 10px;
-      }
-    
-      .list-unstyled {
-        justify-content: center;
-      }
-    
-      .footer-text {
-        flex-direction: column;
-        align-items: center;
-      }
-}
+
 @media screen and (max-width: 576px) {
-  .right-footer{
-      flex-wrap: wrap;
+  .right-footer {
+    flex-wrap: wrap;
   }
-  .right-footer h5{
-      width: 100%;
+
+  .right-footer h5 {
+    width: 100%;
   }
-  
-  }
+}

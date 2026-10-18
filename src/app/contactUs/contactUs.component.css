@@ -3,7 +3,7 @@
     margin-inline: auto;
 }
   .background{
-    background-color: #181819;
+    background-color: var(--cream);
  }
 
  .imgWithText{
@@ -14,15 +14,15 @@
 
 .aiHeading{
   font-size: 46px;
-  color: #fff;
+  color: var(--ink);
 }
 .aipara{
   font-size: 24px;
-  color: #fff;
+  color: var(--muted);
   margin-bottom: 30px;
 }
 .aitext{
- color: rgb(252, 104, 0);
+ color: var(--walnut);
 }
 
 .aiImg{
@@ -31,12 +31,12 @@
 }
 
 .multicoulmn-wrapper-bg{
-  background-color: #181819;
+  background-color: var(--cream);
 }
 .multicoulmn-wrapper-bg .heading{
   text-align: center;
   font-size: 45px;
-  color: #fff;
+  color: var(--ink);
   max-width: 570px;
   margin-inline: auto;
   margin-bottom: 40px;
@@ -54,14 +54,14 @@
 }
 
 .multicoulmn-wrapper-bg .column:nth-of-type(1){
-  border-right: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border-right: 1px solid var(--taupe);
+  border-bottom: 1px solid var(--taupe);
 }
 .multicoulmn-wrapper-bg .column:nth-of-type(2){
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid var(--taupe);
 }
 .multicoulmn-wrapper-bg .column:nth-of-type(3){
-  border-right: 1px solid #fff;
+  border-right: 1px solid var(--taupe);
 }
 .multicoulmn-wrapper-bg .multicolumn{
   display: flex;
@@ -74,7 +74,7 @@
   align-items: center;
   gap: 20px;
   font-size: 36px;
-  color: #fff;
+  color: var(--ink);
   font-weight: 600;
   text-align: left;
   margin-inline: unset;
@@ -85,15 +85,15 @@
   border-radius: 20px;
 }
 .multicoulmn-wrapper-bg .text{
-  color: rgb(175, 192, 193);
+  color: var(--muted);
   font-size: 22px;
   font-weight: 400;
 }
 .multicoulmn-wrapper-bg .btn{
   font-weight: 500;
-  color: #fff;
+  color: var(--ink);
   font-size: 22px;
-  border: 2px solid rgb(252, 104, 0);
+  border: 2px solid var(--walnut);
   max-width: 152px;
   border-radius: 51px;
 }
@@ -119,14 +119,14 @@ margin-bottom: unset;
   width: 50%;
   max-width: unset;
   text-align: left;
-  color: rgb(175, 192, 193);
+  color: var(--muted);
 }
 .multicoulmn-wrapper-bg-v2  .column{
   width: 30%;
   border: none !important;
   position: relative;
   padding-inline: 30px;
-  background-color: #272729;
+  background-color: var(--surface);
   border-radius: 30px;
   padding-block: 30px;
 }
@@ -137,7 +137,7 @@ margin-bottom: unset;
   position: absolute;
   bottom: -51px;
   right: 40px;
-  background-color: rgb(252, 104, 0);
+  background-color: var(--walnut);
   border-radius: 50%;
   max-width: 115px;
   min-width: 115px;
@@ -266,7 +266,7 @@ width: 100%
   }
   .multicoulmn-wrapper-bg .column:nth-of-type(3){
       border-right: none;
-      border-bottom: 1px solid #fff;
+      border-bottom: 1px solid var(--taupe);
   }
   .multicoulmn-wrapper-bg .heading{
       font-size: 24px;
