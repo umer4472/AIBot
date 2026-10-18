@@ -47,6 +47,8 @@
 
 .aiContentv2 {
   padding: 35px;
+  background: linear-gradient(135deg, rgba(237, 230, 220, 0.92), rgba(228, 217, 200, 0.88));
+  border-radius: 24px;
 }
 
 .cardtext {
