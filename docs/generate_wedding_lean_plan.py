@@ -443,10 +443,10 @@ def build():
             [
                 [p("<b>Day</b>", s["cell_b"]), p("<b>Workout</b>", s["cell_b"]), p("<b>Cardio</b>", s["cell_b"])],
                 [p("Monday", s["cell"]), p("Push A (chest)", s["cell"]), p("—", s["cell"])],
-                [p("Tuesday", s["cell"]), p("Pull A (back thickness)", s["cell"]), p("25 min incline walk after weights", s["cell"])],
+                [p("Tuesday", s["cell"]), p("Pull A (back thickness + forearms)", s["cell"]), p("25 min incline walk after weights", s["cell"])],
                 [p("Wednesday", s["cell"]), p("Legs A (heavy)", s["cell"]), p("—", s["cell"])],
                 [p("Thursday", s["cell"]), p("Push B (shoulders)", s["cell"]), p("—", s["cell"])],
-                [p("Friday", s["cell"]), p("Pull B (back width + arms)", s["cell"]), p("25 min incline walk after weights", s["cell"])],
+                [p("Friday", s["cell"]), p("Pull B (back width + arms + forearms)", s["cell"]), p("25 min incline walk after weights", s["cell"])],
                 [p("Saturday", s["cell"]), p("Legs B (lighter) + abs", s["cell"]), p("Optional 20 min walk", s["cell"])],
                 [p("Sunday", s["cell"]), p("Rest", s["cell"]), p("Steps only", s["cell"])],
             ],
@@ -486,14 +486,15 @@ def build():
 
     story.append(
         workout_block(
-            "Tuesday: Pull A (back thickness)",
+            "Tuesday: Pull A (back thickness + forearms)",
             [
                 ("Lat pulldown (or assisted pull-up)", "4 × 6–10", "Pull to upper chest; control the stretch up"),
                 ("Chest-supported machine row", "3 × 8–10", "Chest glued to pad; squeeze shoulder blades"),
                 ("Single-arm cable / machine row", "3 × 10–12", "Elbow close to body; pause at the hip"),
                 ("Cable face pulls", "3 × 15", "Pull to forehead; external rotate at the end"),
                 ("Preacher curl machine or cable curl", "3 × 10–12", "Full stretch at bottom; no swinging"),
-                ("Rope hammer curls (cable)", "2 × 10–12", "Neutral grip; elbows still"),
+                ("Rope hammer curls (cable)", "2 × 10–12", "Neutral grip; elbows still — also hits brachioradialis"),
+                ("Wrist curl (machine / cable / DB)", "2 × 15–20", "Forearms on pad, palms up; only wrists move"),
             ],
         )
     )
@@ -529,13 +530,15 @@ def build():
 
     story.append(
         workout_block(
-            "Friday: Pull B (back width + arms)",
+            "Friday: Pull B (back width + arms + forearms)",
             [
                 ("Wide-grip lat pulldown", "4 × 8–10", "Pull elbows down to sides; stretch at top"),
                 ("Seated cable / machine row", "3 × 10–12", "Neutral grip; chest up; squeeze mid-back"),
                 ("Straight-arm cable pulldown", "3 × 12", "Slight elbow bend; feel lats, not arms"),
                 ("Preacher / machine curl (incline angle)", "3 × 10–12", "Long stretch at bottom for peak biceps"),
                 ("Preacher curl machine (second angle)", "2 × 12", "Strict — no body swing"),
+                ("Reverse cable / EZ curl (palms down)", "2 × 12–15", "Targets top of forearm; light weight, no swing"),
+                ("Reverse wrist curl (machine / cable / DB)", "2 × 15–20", "Palms down; short range — burn is the goal"),
             ],
         )
     )
@@ -551,6 +554,18 @@ def build():
                 ("Cable crunch or hanging leg raise", "3 × 12–15", "Curl ribs to pelvis; don’t yank with arms"),
                 ("Bicycle crunch", "3 × 12 / side", "Slow — elbow to opposite knee"),
             ],
+        )
+    )
+
+    story.append(p("Forearms (why they’re in the plan)", s["h2"]))
+    story.append(
+        p(
+            "Rows, pulldowns and curls already work grip and forearms. Extra direct work makes sleeves and wedding photos look thicker.<br/>"
+            "<b>Tue:</b> wrist curls (flexors — underside). <b>Fri:</b> reverse curls + reverse wrist curls (extensors — top).<br/>"
+            "Do them last on pull days so grip isn’t fried before rows. Light weight, high reps, full stretch. "
+            "If elbows/wrists feel cranky, drop to 1 set or skip that week.<br/>"
+            "Optional finisher (1×/week): farmer hold on dumbbells or hex bar — 3 × 30–40 sec.",
+            s["body"],
         )
     )
 
